@@ -1,0 +1,967 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+/* Start Nav Bar */
+.navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #5CD2E6;
+    width: 100%;
+    overflow: auto;
+    padding: 5px 100px;
+    opacity: 0.8;
+    z-index: 1;
+}
+.navBar img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.navBar .ulNav{
+    list-style: none;
+    float: right;
+    margin-top: 25px;
+}
+.navBar .ulNav li{
+    display: inline-block;
+}
+.navBar .ulNav a{
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+    color: #F4E869;
+    font-family: 'Kalam', cursive;
+}
+.navBar .ulNav .homeLink{
+    color: #155b8d;
+}
+.navBar .ulNav .homeLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+    height: 2px;
+    background-color: #155b8d;
+    transition:  0.5s; 
+}
+.navBar .ulNav .links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 0;
+    height: 2px;
+    background-color: #155b8d;
+    transition:  0.5s; 
+}
+.navBar .ulNav .links:hover::after {
+    width: 100%;
+}
+.navBar .ulNav a:hover{
+    color: #155b8d;
+}
+/* End Nav Bar */
+
+/* Start Background */
+.background{
+    position: relative;
+    margin-top: 90px;
+    background-image: url(../Images/bg1.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    text-align: center;
+    height: 625px;
+}
+.background .backgroundContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    text-align: center;
+}
+.background .backgroundContent h1{
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+.background .backgroundContent p{
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+.background .backgroundContent span{
+    color: #5CD2E6;
+    font-weight: bold;
+    font-size: 30px;
+}
+.background .backgroundContent button{
+    color: #FFF;
+    border: none;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.background .backgroundContent .backgroundBtn1{
+    background-color: #5CD2E6;
+}
+.background .backgroundContent .backgroundBtn2{
+    background-color: #155b8d;
+}
+.background .backgroundContent button:hover{
+    opacity: 0.85;
+}
+/* End Background */
+
+/* Start Services */
+.services{
+    position: relative;
+    background-color: #F1EFEF;
+    padding: 120px 0;
+    text-align: center;
+}
+.services .servicesHeading{
+    text-transform: capitalize;
+    color: #155b8d;
+    font-size: 25px;
+    position: relative;
+}
+.services .servicesHeading::after{
+    content: "";
+    position: absolute;
+    left: 47%;
+    bottom: -32%;
+    height: 5px;
+    width: 7%;
+    background-color: #5CD2E6;  
+}
+.services .servicesImage{
+    overflow: auto;
+}
+.services .servicesImage .servicesImageOne{
+    position: relative;
+    float: left;
+    border: 1px solid #155b8d;
+    width: 380px;
+    height: 210px;
+    padding: 25px;
+    margin-top: 70px;
+    margin-left: 50px;
+    color: #155b8d;
+}
+.services .servicesImage .servicesImageOne .servicesChangePosition{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+}
+.services .servicesImage .differentMargin{
+    margin-left: 10%;
+}
+.services .servicesImage .servicesImageOne i{
+    font-size: 35px;
+}
+.services .servicesImage .servicesImageOne h3{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.services .servicesImage .servicesImageOne p{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.services .servicesImage .servicesImageOne a{
+    color: #5CD2E6;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.services .servicesImage .servicesImageOne:hover{
+    color: #FFF;
+}
+.servicesImageOne::after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #155b8d;
+    transition: 0.5s;
+}
+.servicesImageOne:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/* End Services */
+
+/* Start Categoris */
+.categorisContainer{
+    width: 80%;
+    margin: auto;
+}
+.categoris{
+    padding: 120px 0;
+    text-align: center;
+    padding-right: 30px;
+}
+.categoris .categorisHeading{
+    text-transform: capitalize;
+    color: #155b8d;
+    font-size: 25px;
+    position: relative;
+}
+.categoris .categorisHeading::after{
+    content: "";
+    position: absolute;
+    left: 46.5%;
+    bottom: -32%;
+    height: 5px;
+    width: 9%;
+    background-color: #5CD2E6;  
+}
+.categoris .categorisImage .categorisBlockImage{
+    overflow: auto;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg{
+    width: 27%;
+    height: 400px;
+    margin-top: 80px;
+    margin-left:70px;
+    float: left;
+    position: relative;
+}
+.categoris .categorisImage .blockTwo{
+    margin-top: -40px;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg img{
+    width: 100%;
+    height: 99%;
+    padding: 20px;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg .overlay{
+    width: 88%;
+    height: 89.5%;
+    position: absolute;
+    top: 0;
+    margin-top: 19px;
+    margin-left: 19px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.8;
+    visibility: hidden;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg .categorisOverlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    background-color: rgba(178, 191, 212, 0.5);
+    opacity: 0.5;
+    transition: 0.8s;
+    visibility: hidden;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg .categorisOverlay h3,
+.categoris .categorisImage .categorisBlockImage .categorisImageImg .categorisOverlay i{
+    color: #F4E869;
+    font-size: 28px;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg .categorisOverlay i{
+    margin-right: 10px;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg .categorisOverlay p{
+    color: #FFF;
+    font-size: 22px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.categoris .categorisImage .categorisBlockImage .categorisImageImg:hover .categorisOverlay,
+.categoris .categorisImage .categorisBlockImage .categorisImageImg:hover .overlay{
+  visibility: visible;
+  opacity: 1;
+}
+/* End Categoris */
+
+/* Start Offer */
+.offer{
+    position: relative;
+    background-color: #F1EFEF;
+    padding: 120px 0;
+    text-align: center;
+}
+.offer .offerHeading{
+    text-transform: capitalize;
+    color: #155b8d;
+    font-size: 25px;
+    position: relative;
+}
+.offer .offerHeading::after{
+    content: " ";
+    position: absolute;
+    left: 47%;
+    bottom: -32%;
+    height: 5px;
+    width: 7%;
+    background-color: #5CD2E6;
+}
+.offer .offerImage{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+.offer .offerImage .offerImageOne{
+    overflow: auto;
+    position: relative;
+}
+.offer .offerImage .offerImageOne .offerImageImg{
+    position: relative;
+    overflow: auto;
+    float: left;
+    border: 1px solid #155b8d;
+    width: 350px;
+    height: 180px;
+    padding: 50px 25px 0;
+    color: #155b8d;
+}
+.offer .offerImage .offerImageOne .offerChangePosition{
+    position: absolute;
+    z-index: 1;
+}
+.offer .offerImage .offerImageOne .differentMargin{
+    margin: 0 80px;
+}
+.offer .offerImage .offerImageOne .offerImageImg .offerIcon{
+    float: left;
+    font-size: 35px;
+}
+.offer .offerImage .offerImageOne .offerImageImg .offerContent{
+    float: right;
+    position: absolute;
+    text-transform: capitalize;
+    width: 250px;
+    margin-left: 30px;
+}
+.offer .offerImage .offerImageOne .offerImageImg .differentMarginOfferContent{
+    margin-left: 45px;
+}
+.offer .offerImage .offerImageOne .offerImageImg h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.offer .offerImage .offerImageOne .offerImageImg p{
+    font-size: 18px;
+}
+.offer .offerImage .blockTwo{
+    margin-top: 30px;
+}
+.offer .offerImage .offerImageOne .offerImageImg:hover{
+    color: #FFF;
+}
+.offerImageImg::after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #155b8d;
+    transition: 0.5s;
+}
+.offerImageImg:hover::after{
+    width: 100%;
+    height: 100%; 
+}
+/* End Offer */
+
+/* Start About Us */
+.aboutUsContainer{
+    width: 80%;
+    margin: auto;
+}
+.aboutUs{
+    padding: 120px 0;
+    overflow: auto;
+}
+.aboutUs .aboutUsContent{
+    float: left;
+    width: 50%;
+}
+.aboutUs .aboutUsContent .aboutUsContentHeading{
+    text-transform: capitalize;
+    color: #155b8d;
+    font-size: 25px;
+    position: relative;
+}
+.aboutUs .aboutUsContent .aboutUsContentHeading::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -32%;
+    height: 5px;
+    width: 9%;
+    background-color: #5CD2E6;  
+}
+.aboutUs .aboutUsContent .aboutUsContentP{
+    font-size: 18px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #155b8d;
+    margin: 50px 0 30px;
+}
+.aboutUs .aboutUsContent .aboutUsContentIcons .iconOne{
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.aboutUs .aboutUsContent .aboutUsContentIcons i{
+    float: left;
+    color: #F4E869;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.aboutUs .aboutUsContent .aboutUsContentIcons p{
+    color: #155b8d;
+}
+.aboutUs .aboutUsImage{
+    float: right;
+}
+.aboutUs .aboutUsImage img{
+    width: 500px;
+    height: 500px;
+}
+.aboutUs .aboutUsImage .aboutUsThreeDivs{
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.aboutUs .aboutUsImage .aboutUsThreeDivs .divOne{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #F4E869;
+}
+.aboutUs .aboutUsImage .aboutUsThreeDivs .differentDiv{
+    background-color: #155b8d;
+}
+.aboutUs .aboutUsImage .aboutUsThreeDivs .divOne:hover{
+    background-color: #155b8d;
+}
+/* End about Us */
+
+/* Start Statistics */
+.statisticsContainer .statistics{
+    width: 100%;
+    height: 350px;
+    background: url(../Images/bg3.jpg) no-repeat center fixed ;
+    background-size: cover;
+}
+.statisticsContainer .statistics .statisticsOverlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+.statisticsContainer .statistics .statisticsContent{
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+.statisticsContainer .statistics .statisticsContent .statisticsContentOne{
+    width: 200px;
+    height: 200px;
+    color: #FFF;
+    text-align: center;
+    text-transform: capitalize;
+    float: left;
+    margin-top: 100px;
+}
+.statisticsContainer .statistics .statisticsContent .differentMargin{
+    margin-left: 10%;
+}
+.statisticsContainer .statistics .statisticsContent .statisticsContentOne i{
+    font-size: 35px;
+    color: #F4E869;
+}
+.statisticsContainer .statistics .statisticsContent .statisticsContentOne h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.statisticsContainer .statistics .statisticsContent .statisticsContentOne p{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+/* End Statistics */
+
+/* Start Prices */
+.prices{
+    position: relative;
+    padding: 120px 0;
+    background-color: #F1EFEF;
+    text-align: center;
+    overflow: auto;
+}
+.prices .pricesHeading{
+    text-transform: capitalize;
+    color: #155b8d;
+    font-size: 25px;
+    position: relative;
+}
+.prices .pricesHeading::after{
+    content: " ";
+    position: absolute;
+    left: 47%;
+    bottom: -32%;
+    height: 5px;
+    width: 6%;
+    background-color: #5CD2E6;
+}
+.prices .pricesTableBlock{
+    width: 80%;
+    margin: auto;
+}
+.prices .pricesTable .pricesTableOne{
+    position: relative;
+    float: left;
+    width: 30%;
+    border: 2px solid #155b8d;
+    margin-top: 70px;
+    padding: 60px 0;
+    color: #155b8d;
+    border-radius: 20px;
+}
+.prices .pricesTable .differentMargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.prices .pricesTable .pricesTableOne h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.prices .pricesTable .pricesTableOne .pricesTableCircle{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid #155b8d;
+    margin: 25px auto;
+    padding-top: 10px;
+}
+.prices .pricesTable .pricesTableOne .pricesTableCircle h2{
+    font-size: 45px;
+}
+.prices .pricesTable .pricesTableOne .pricesTableCircle p{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.prices .pricesTable .pricesTableOne .pricesTableContent .pricesTableContentP{
+    font-size: 22px;
+    line-height: 1.5;
+}
+.prices .pricesTable .pricesTableOne .pricesTableBtn{
+    margin-top: 30px;
+    border: 2px solid #155b8d;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #155b8d;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.prices .pricesTable .pricesTableOne .pricesTableBtn:hover{
+    background-color: #155b8d;
+    color: #FFF;
+}
+.prices .pricesTable:hover .pricesTableCircle{
+    color: #5CD2E6;
+    border: 2px solid #5CD2E6;
+}
+.prices .pricesTable:hover h3{
+    color: #5CD2E6;
+}
+.prices .pricesTable .pricesTableOne::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: #5cd1e616; */
+    transition: 0.5s;
+}
+.prices .pricesTable .pricesTableOne:hover::after{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+/* End Prices */
+
+/* Start Products */
+.productsContainer .products{
+    width: 100%;
+    height: 350px;
+    background: url(../Images/bg9.jpg) no-repeat center fixed ;
+    background-size: cover;
+}
+.productsContainer .products .productsOverlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+.productsContainer .products .productsContent{
+    overflow: auto;
+    width: 70%;
+    margin: auto;
+}
+.productsContainer .products .productsContent .productsContentOne{
+    width: 45%;
+    margin-top: 90px;
+    float: left;
+}
+.productsContainer .products .productsContent .differentMargin{
+    margin-left: 10%;
+}
+.productsContainer .products .productsContent .productsContentOneImage{
+    overflow: auto;
+}
+.productsContainer .products .productsContent .productsContentOneImage .productsContentOneImageImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 25px;
+    float: left;
+}
+.productsContainer .products .productsContent .productsContentOneImage .productsContentOneImageName{
+    margin-top: 10px;
+}
+.productsContainer .products .productsContent .productsContentOneImage .productsContentOneImageName h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+.productsContainer .products .productsContent .productsContentOneImage .productsContentOneImageName p{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #5CD2E6;
+}
+.productsContainer .products .productsContent .productsContentOne .productsContentOneP{
+    margin: 20px;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+/* End Products */
+
+/* Start Team */
+.teamContainer{
+    width: 80%;
+    margin: auto;
+}
+.team{
+    position: relative;
+    padding: 120px 0;
+    text-align: center;
+    overflow: auto;
+}
+.team .teamHeading{
+    text-transform: capitalize;
+    color: #155b8d;
+    font-size: 25px;
+    position: relative;
+}
+.team .teamHeading::after{
+    content: " ";
+    position: absolute;
+    left: 47%;
+    bottom: -32%;
+    height: 5px;
+    width: 8%;
+    background-color: #5CD2E6;
+}
+.team .teamContent{
+    overflow: auto;
+}
+.team .teamContent .teamContentOne{
+    background-color: #F1EFEF;
+    width: 30%;
+    height: 350px;
+    padding: 20px 15px 30px;
+    margin-top: 70px;
+    position: relative;
+    float: left;
+}
+.team .teamContent .differentMargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.team .teamContent .teamContentOne .teamContentOneImage{
+    width: 90%;
+    margin: 0 auto 15px;
+    height: 80%;
+    position: relative;
+}
+.team .teamContent .teamContentOne .teamContentOneImage img{
+    width: 100%;
+    height: 100%;
+}
+.team .teamContent .teamContentOne .teamContentOneImage .teamContentOneImageOverlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3) ;
+    visibility: hidden;
+}
+.team .teamContent .teamContentOne .teamContentOneImage .teamContentOneImageOverlay a{
+    display: block;
+    width: 40px;
+    height: 45px;
+    background-color: #5CD2E6;
+    color: #FFF;
+    font-size: 20px;
+    margin-left: auto ;
+}
+.team .teamContent .teamContentOne .teamContentOneImage .teamContentOneImageOverlay a i{
+    line-height: 45px;
+}
+.team .teamContent .teamContentOne .teamContentOneData{
+    color: #155b8d;
+}
+.team .teamContent .teamContentOne .teamContentOneData h3{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.team .teamContent .teamContentOne .teamContentOneData p{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.team .teamContent .teamContentOne::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0,0.2);
+    opacity: 0;
+    transition: 0.5s;
+}
+.team .teamContent .teamContentOne:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team .teamContent .teamContentOne:hover .teamContentOneImageOverlay{
+    visibility: visible;
+}
+.team .teamContent .teamContentOne:hover .teamContentOneData{
+    color: #5CD2E6;
+    transition: 0.5s;
+}
+/* End Team */
+
+/* Start Trending Products */
+.trendingProducts{
+    position: relative;
+    background-color: #F1EFEF;
+    padding: 120px 0;
+    text-align: center;
+}
+.trendingProducts .trendingProductsHeading{
+    text-transform: capitalize;
+    color: #155b8d;
+    font-size: 25px;
+    position: relative;
+}
+.trendingProducts .trendingProductsHeading::after{
+    content: " ";
+    position: absolute;
+    left: 46%;
+    bottom: -32%;
+    height: 5px;
+    width: 9%;
+    background-color: #5CD2E6;
+}
+.trendingProducts .trendingProductsContent{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    overflow: auto;
+}
+.trendingProducts .trendingProductsContent .trendingProductsContentOne{
+    width: 30%;
+    background-color: #FFF;
+    text-align: left;
+    padding: 20px;
+    float: left;
+    position: relative;
+    height: 600px;
+}
+.trendingProducts .trendingProductsContent .trendingProductsContentOne::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 0;
+    background-color: #5cd1e62d;
+    transition: 0.5s;
+}
+.trendingProducts .trendingProductsContent .trendingProductsContentOne::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 0;
+    background-color: #5cd1e62d;
+    transition: 0.5s;
+}
+.trendingProducts .trendingProductsContent .trendingProductsContentOne:hover::after{
+    width: 100%;
+    height: 50%;
+}
+.trendingProducts .trendingProductsContent .trendingProductsContentOne:hover::before{
+    width: 100%;
+    height: 50%;
+}
+.trendingProducts .trendingProductsContent .differentMargin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.trendingProducts .trendingProductsContent .trendingProductsContentOne .trendingProductsContentOneImage{
+    width: 80%;
+    height: 50%;
+}
+.trendingProducts .trendingProductsContent .trendingProductsContentOne .trendingProductsContentOneImage img{
+    width: 100%;
+    height: 100%;
+}
+.trendingProducts .trendingProductsContentOneData .trendingProductsContentOneDataIcon{
+    overflow: auto;
+    margin-top: 30px;
+    color: #155b8d;
+    font-size: 20px;
+}
+.trendingProducts .trendingProductsContentOneData .trendingProductsContentOneDataIcon span{
+    font-size: 18px;
+    color: #155b8d9e;
+    text-transform: capitalize;
+}
+.trendingProducts .trendingProductsContentOneData .trendingProductsContentOneDataIcon .icons{
+    float: left;
+}
+.trendingProducts .trendingProductsContentOneData .trendingProductsContentOneDataIcon .differentMargin{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.trendingProducts .trendingProductsContentOneData h3{
+    margin-top: 30px;
+    color: #155b8d;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.trendingProducts .trendingProductsContentOneData p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #155b8d9e;
+}
+.trendingProducts .trendingProductsContentOneData a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #5CD2E6;
+    margin-top: 30px;
+}
+.trendingProducts .trendingProductsContentOneData a:hover{
+    text-decoration: underline;
+}
+/* End Trending Products */
+
+/* Start Footer */
+.footerContainer{
+    background-color: #5CD2E6;
+}
+.footer{
+    position: relative;
+    width: 70%;
+    padding: 50px 0;
+    margin: auto;
+    text-align: center;
+}
+.footer .footerImage{
+    width: 25%;
+    margin: auto;
+}
+.footer .footerImage img{
+    width: 100%;
+    border-radius: 20px;
+}
+.footer .footerIcon{
+    overflow: auto;
+    display: inline-block;
+    margin: 30px auto;
+}
+.footer .footerIcon .footerIconOne{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #155b8d;
+    float: left;
+    padding-top: 12px;
+    margin-right: 10px;
+}
+.footer .footerIcon .footerIconOne a{
+    text-decoration: none;
+}
+.footer .footerIcon .footerIconOne i{
+    color: #FFF;
+    font-size: 25px;
+}
+.footer .footerIcon .facebook:hover{
+    background-color: #3b5998;
+}
+.footer .footerIcon .twitter:hover{
+    background-color: #00acee;
+}
+.footer .footerIcon .youtube:hover{
+    background-color: #c4302b;
+}
+.footer .footerIcon .linkedin:hover{
+    background-color: #0072b1;
+}
+.footer .footerIcon .instagram:hover{
+    background-color: #833AB4;
+}
+.footer .footerIcon .google:hover{
+    background-color: #db4a39;
+}
+.footer .copyright{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0072b1;
+}
+.footer .copyright span{
+    color: #FFF;
+}
+/* End Footer */
